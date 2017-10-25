@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link id="s1" rel="stylesheet" type="text/css" href="CSS1.css" />-->
+
+		<style type="text/css">
+			#d1 {
+				height: 100px;
+				width: 100px;
+			}
+			
+			#cb1 {
+				color: gold;
+				font-size: 30px;
+			}
+			
+			#box {
+				height: 20px;
+				width: 20px;
+			}
+			
+			#d2 {
+				height: 100px;
+				width: 100px;
+				color: green;
+			}
+			
+			#text {
+				height: auto;
+				width: auto;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			function skin1() {
+				var mL = document.getElementById('s1');
+				mL.href = 'CSS1.css';
+				d1.style.display = 'none';
+			}
+
+			function skin2() {
+				var mL = document.getElementById('s1')
+				mL.href = 'CSS2.css';
+				d1.style.display = 'block';
+			}
+
+			function isSelect() {
+				var cb = document.getElementById('box');
+				if(cb.checked) {
+					box1.style.display = 'none';
+				} else {
+					box1.style.display = 'block';
+				}
+
+			}
+
+			function Android() {
+				JSADD.javaScriptInter("吐死吐死吐死");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="">
+			<input type="button" value="皮肤1" onclick="Android()" />
+			<input type="button" value="皮肤2" onclick="skin2()" />
+		</div>
+
+		<div id="cb1">
+			<input type="checkbox" align="center" id="box" onchange="isSelect()" />
+			<span style="position: absolute; top: 15px;" >	
+				是否隐藏图片
+			</span>
+		</div>
+
+		<div id="box1">
+			<img src="img/111.png" id="" />
+
+		</div>
+
+		<div id="d2">
+			<a style="color: gold;" href="http://www.baidu.com">点我点我</a>
+		</div>
+	</body>
+
+</html>

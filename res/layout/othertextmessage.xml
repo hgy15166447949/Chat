@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_othertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/otheredit"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="别人的消息"
+        android:textSize="16sp" />
+
+</LinearLayout>

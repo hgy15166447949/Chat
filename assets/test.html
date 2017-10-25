@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			#image {
+				height: 150px;
+				width: 150px;
+			}
+			#div7{
+				height: 200px;
+				width: 100px;
+				background: gray;
+				display: none;
+			}
+			#div8{
+				height: 100px;
+				width: 100px;
+				border: 1px solid black;
+			}
+			.box{
+				background: greenyellow;
+				
+			}
+		</style>
+
+		<script type="text/javascript">
+			function isSelect() {
+				var cb = document.getElementById('mbox');
+				if(cb.checked) {
+					div2.style.display = 'none';
+				} else {
+					div2.style.display = 'block';
+				}
+			}
+
+			function Android() {
+				JSADD.javaScriptInter("吐死吐死吐死");
+			}
+			
+			function toJS(param){
+				document.getElementById('fromJS').innerText = param;
+				Android();
+			}
+			
+			function changetext(){
+				var text = document.getElementById('changetext');
+				text.title = 'aaaaaaaa';
+				text.value = 'aaaaaaaa'
+				
+			}
+			
+			function showhide(){
+				var oDiv = document.getElementById('div7');
+				if (oDiv.style.display == 'block') {
+					oDiv.style.display = 'none';
+				} else{
+					oDiv.style.display = 'block';
+				}
+			}
+			
+			function changeColor(){
+				var oChangRed = document.getElementById('div8');
+				oChangRed.className = 'box';
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<div id="div1">
+			<input type="checkbox" align="center" id="mbox" onchange="isSelect()" />
+			<span id="text">
+				点击隐藏图片
+			</span>
+		</div>
+		<div id="div2">
+			<img src="img/111.png" id="image" />
+		</div>
+
+		<div id="div3" >
+			<input type="button" name="button" id="button" value="我是JS的button,点我调用安卓代码" onclick="Android()" />
+		</div>
+
+		<div id="div4" >
+			<a href="http://www.baidu.com">点我跳转到百度页面</a>
+
+		</div>
+		<div id="fromJS" style="position: relative;top: 10px; ">
+		</div>
+		<div id="div5">
+			<input type="text" id="changetext" value="你瞅啥!!" />
+			<input type="button" name="button" id="button" value="点击修改文字" onclick="changetext()"/>
+			
+		</div>
+		
+		<div id="div6">
+			<input type="button" id="button" value="显示隐藏" onclick="showhide()"/>
+		</div>
+		<div id="div7">
+			
+		</div>
+		
+		
+		<div id="div9">
+			<input type="button" name="button" id="button" value="点击变色" onclick="changeColor()"/>
+		</div>
+		<div id="div8">
+			
+		</div>
+	</body>
+
+</html>
